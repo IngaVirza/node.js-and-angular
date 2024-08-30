@@ -1,5 +1,5 @@
-const Position = require('./models/Position');
-const errorHandler = require('./utils/errorHandler');
+const Position = require('../models/Position');
+const errorHandler = require('../utils/errorHandler');
 module.exports.getByCategoryId = async function (req, res) {
   try {
     const positions = await Position.find({
