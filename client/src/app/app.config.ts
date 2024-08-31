@@ -1,13 +1,6 @@
-import {
-  ApplicationConfig,
-  NgModule,
-  provideZoneChangeDetection,
-} from '@angular/core';
-import { provideRouter, RouterModule, Routes } from '@angular/router';
-
-import { LoginPageComponent } from './login-page/login-page.component';
-
-const routes: Routes = [{ path: 'login', component: LoginPageComponent }];
+import { ApplicationConfig, provideZoneChangeDetection } from '@angular/core';
+import { provideRouter } from '@angular/router';
+import { routes } from './app.routes';
 
 export const appConfig: ApplicationConfig = {
   providers: [
